@@ -1,0 +1,113 @@
+/* Reset margin and padding for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styling */
+  .header {
+    text-align: center;
+    padding: 20px;
+    background: #000000; /* Set the background to solid black */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Header title styling */
+  .header h1 {
+    color: #00b874; /* Change the color to #00b874 */
+    font-weight: bold; /* Match the thickness of the hero section heading */
+    font-size: 3em; /* Ensure the font size is consistent */
+  }
+  
+  /* Navigation list styling */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    background: transparent; /* Ensure the background is transparent */
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Grouping navigation links to the left */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add some space between the profile icon and the nav links */
+  }
+  
+  /* Navigation list item styling */
+  .nav-list li {
+    margin: 0px; /* Reduce the space between elements and separators */
+  }
+  
+  /* Navigation link styling */
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Navigation link hover effect */
+  .nav-list a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #00b874;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  .nav-list a:hover::before,
+  .nav-list a:focus::before {
+    width: 100%;
+    left: 0;
+  }
+  .nav-list a:hover,
+  .nav-list a:focus {
+    color: #00b874;
+  }
+  
+  /* Search container styling */
+  .search-container {
+    margin-left: auto;
+  }
+  
+  /* Search input styling */
+  .search-container input {
+    padding: 5px;
+    font-size: 16px;
+    width: 200px; /* Adjusted width to fit inside the black bar */
+  }
+  
+  /* Profile icon styling */
+  .profile-icon {
+    margin-right: 20px; /* Add some space between the profile icon and the nav links */
+  }
+  
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon-person {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    mask: url("C:/Users/Aafi/Desktop/Protfolio/protfolio/src/components/person-icon.svg") no-repeat center;
+    mask-size: contain;
+  }
